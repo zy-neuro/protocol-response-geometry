@@ -7,7 +7,7 @@ phenotype space (full-cell z-score + PCA; halves do not enter the fit),
 and compare 15-NN Jaccard of half-A vs half-B with cross-regime 15-NN
 Jaccard for the same cells.
 
-Writes revision/results/q1_reliability/ only.
+Writes results/q1_reliability/ only.
 """
 
 from __future__ import annotations

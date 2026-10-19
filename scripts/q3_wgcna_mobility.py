@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """WGCNA (R package) modules vs mobility.
 
-Reuses revision/results/q3_mobility/mobility_scores.csv (does not redefine
+Reuses results/q3_mobility/mobility_scores.csv (does not redefine
 mobility). Gene panel, join, log-CPM, and t-type residualization match the
 Python fallback; only module construction is WGCNA (Langfelder & Horvath).
 
-Writes wgcna_* tables under revision/results/q3_mobility/. Leaves the Python
+Writes wgcna_* tables under results/q3_mobility/. Leaves the Python
 fallback CSVs in place for audit.
 """
 
@@ -293,7 +293,7 @@ def associate(samples, stems, labels, mob, info) -> None:
         ],
         "note": (
             "EXPLAIN remains type-level in the main text. This is an Extended Data control. "
-            "Python WGCNA-style fallback tables are retained for audit; WGCNA files are the revision result."
+            "Python WGCNA-style fallback tables are retained for audit; WGCNA files are the reported result."
         ),
     }
     (OUT_Q3_MOB / "wgcna_summary.json").write_text(json.dumps(payload, indent=2) + "\n")
@@ -304,14 +304,14 @@ def associate(samples, stems, labels, mob, info) -> None:
         "Mobility is 1 − mean Spearman of each cell’s rank-distance neighborhood profile across the three k₈₀ regime pairs. "
         "High mobility means the cell’s relative neighbors changed across regimes.",
         "",
-        f"**Revision result:** {payload['method']}",
+        f"**Reported result:** {payload['method']}",
         "",
         f"- Network: unsigned; minModuleSize = {MIN_MODULE_SIZE}; mergeCutHeight = 0.25; seed = {q3.SEED}.",
         f"- Soft-threshold β = {beta}; scale-free R² = {r2:.3f} ({fit.get('beta_selection')}).",
         f"- Modules tested (non-grey): {n_mod}. Grey/unassigned genes: {int(float(fit['n_grey_genes']))}.",
         "",
         "Python WGCNA-style fallback tables (`module_*.csv`, `summary.json`) are kept for audit. "
-        "Use the `wgcna_*` files as the revision result.",
+        "Use the `wgcna_*` files as the reported result.",
         "",
         "## Numbers",
         "",
@@ -357,7 +357,7 @@ def associate(samples, stems, labels, mob, info) -> None:
         "",
         "## Files",
         "",
-        "Revision result (WGCNA R package):",
+        "Reported result (WGCNA R package):",
         "",
         "- `wgcna_soft_threshold.csv` — pickSoftThreshold fit (powers 1–20)",
         "- `wgcna_module_table.csv` — modules (grey flagged; not tested)",
@@ -367,7 +367,7 @@ def associate(samples, stems, labels, mob, info) -> None:
         "- `wgcna_summary.json` — β, R², n modules, n cells, n genes",
         "- `wgcna_construction.csv`, `wgcna_gene_panel.csv` — run metadata",
         "",
-        "Audit (Python WGCNA-style fallback; not the revision result): `module_*.csv`, `summary.json`.",
+        "Audit (Python WGCNA-style fallback; not the reported result): `module_*.csv`, `summary.json`.",
         "Mobility scores (unchanged): `mobility_scores.csv`.",
     ]
     (OUT_Q3_MOB / "README.md").write_text("\n".join(lines) + "\n")

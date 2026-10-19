@@ -6,7 +6,7 @@ three regime pairs in k₈₀ space (high = neighborhood changed). Module
 eigengenes from a WGCNA-style unsigned weighted network on curated excitability
 genes ∪ top HVGs (cap 2000). t-type residualization is the covariate control.
 
-Writes revision/results/q3_mobility/ only. Does not change Q3 type-level claims.
+Writes results/q3_mobility/ only. Does not change Q3 type-level claims.
 """
 
 from __future__ import annotations

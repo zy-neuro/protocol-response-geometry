@@ -6,7 +6,7 @@
 suppressPackageStartupMessages({
   ok <- requireNamespace("WGCNA", quietly = TRUE)
   if (!ok) {
-    stop("WGCNA is not installed in this R library. Run revision/scripts/install_wgcna.R")
+    stop("WGCNA is not installed in this R library. install WGCNA in this R library")
   }
   library(WGCNA)
 })

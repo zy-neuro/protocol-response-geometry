@@ -1,5 +1,5 @@
 # Figure regeneration (required)
 numpy
 matplotlib
-# Used by revision/scripts/q3_mobility_modules.py (not needed for figures)
+# Used by scripts/q3_mobility_modules.py (not needed for figures)
 scipy

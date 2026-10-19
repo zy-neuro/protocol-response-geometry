@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cross-regime kNN Jaccard vs neighborhood size (revision analysis).
+"""Cross-regime kNN Jaccard vs neighborhood size.
 
 Reads submitted k80 phenotype scores. Writes chance-adjusted Jaccard
 across k = 15, 30, 60, 120, 240, 480, 600, plus per-cell Jaccard at k=15.
