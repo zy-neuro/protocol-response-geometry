@@ -1,0 +1,4 @@
+pair,n_shared_subclasses,spearman_S
+long_pulse__ramp,6,0.9357142857142854
+long_pulse__brief_pulse,6,0.5785714285714285
+ramp__brief_pulse,6,0.6214285714285712

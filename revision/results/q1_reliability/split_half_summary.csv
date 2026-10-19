@@ -1,0 +1,8 @@
+contrast,pool,n_cells,observed_jaccard_mean,observed_jaccard_median,chance_jaccard_mean,chance_jaccard_sd,adjusted_jaccard,n_shuffle,k
+within_long_square_split_half,split_half_cells,3598,0.10913180426581,0.07142857142857142,0.0025883541606390296,0.0002313958788338123,0.10654345010517097,100,15
+long_pulse__ramp,same_split_half_cells,3276,0.02535539041139263,0.0,0.0024638915981122626,0.00020320745825676035,0.022891498813280366,100,15
+long_pulse__ramp,original_full_shared_pool_subset,3276,0.022091538375909926,0.0,,,,,15
+long_pulse__brief_pulse,same_split_half_cells,3509,0.024269103659944006,0.0,0.002291693714194561,0.00017153037642725217,0.021977409945749444,100,15
+long_pulse__brief_pulse,original_full_shared_pool_subset,3509,0.02145416279741252,0.0,,,,,15
+ramp__brief_pulse,same_split_half_cells,3351,0.020106212253401867,0.0,0.0023792922978992433,0.0001752942786173697,0.017726919955502622,100,15
+ramp__brief_pulse,original_full_shared_pool_subset,3351,0.01793212137073331,0.0,,,,,15

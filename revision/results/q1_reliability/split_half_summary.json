@@ -1,0 +1,22 @@
+{
+  "n_nwb_attempted": 4435,
+  "n_eligible_ge4_sweeps": 4430,
+  "n_both_halves_ok": 3598,
+  "n_projected": 3598,
+  "k": 15,
+  "k80_long_pulse": 11,
+  "within_jaccard_mean": 0.10913180426581,
+  "within_jaccard_median": 0.07142857142857142,
+  "within_chance_mean": 0.0025883541606390296,
+  "within_adjusted": 0.10654345010517097,
+  "cross_samepool_means": {
+    "long_pulse__ramp": 0.02535539041139263,
+    "long_pulse__brief_pulse": 0.024269103659944006,
+    "ramp__brief_pulse": 0.020106212253401867
+  },
+  "cross_samepool_mean_of_pairs": 0.023243568774912834,
+  "landing": "within-regime trial reliability >> cross-regime overlap; stimulus-dependent reorganization is supported",
+  "projection": "full-cell long-pulse z-score + PCA; halves projected, not used in the fit",
+  "split": "odd/even long-square sweep number (fallback interleaved index, random seed=0)",
+  "nwb_used": true
+}
